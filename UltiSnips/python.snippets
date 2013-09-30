@@ -500,12 +500,46 @@ snippet af "Assert False" b
 self.assertFalse(${1:expression})
 endsnippet
 
+snippet ais "Assert is" b
+self.assertIs(${1:first},${2:second})
+endsnippet
+
+snippet aisn "Assert is not" b
+self.assertIsNot(${1:first},${2:second})
+endsnippet
+
+snippet ain "Assert in" b
+self.assertIn(${1:first},${2:second})
+endsnippet
+
+snippet anin "Assert not in" b
+self.assertNotIn(${1:first},${2:second})
+endsnippet
+
+snippet ainst "Assert is instance" b
+self.assertIsInstance(${1:object},${2:class})
+endsnippet
+
+snippet aninst "Assert not is instance" b
+self.assertNotIsInstance(${1:object},${2:class})
+endsnippet
+
 snippet aae "Assert almost equal" b
 self.assertAlmostEqual(${1:first},${2:second})
 endsnippet
 
 snippet ar "Assert raises" b
 self.assertRaises(${1:exception}, ${2:func}${3/.+/, /}${3:arguments})
+endsnippet
+
+snippet war "with Assert raises" b
+with self.assertRaises(${1:exeception}):
+	${2:pass}
+endsnippet
+
+snippet warr "with Assert raises regexp" b
+with self.assertRaisesRegexp(${1:exception}, ${2:regexp}):
+	${3:pass}
 endsnippet
 
 
