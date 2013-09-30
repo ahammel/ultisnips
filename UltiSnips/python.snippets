@@ -489,7 +489,7 @@ import pudb; pudb.set_trace()
 endsnippet
 
 snippet ae "Assert equal" b
-self.assertEqual(${1:first},${2:second})
+self.assertEqual(${1:first}, ${2:second})
 endsnippet
 
 snippet at "Assert True" b
@@ -501,31 +501,31 @@ self.assertFalse(${1:expression})
 endsnippet
 
 snippet ais "Assert is" b
-self.assertIs(${1:first},${2:second})
+self.assertIs(${1:first}, ${2:second})
 endsnippet
 
 snippet aisn "Assert is not" b
-self.assertIsNot(${1:first},${2:second})
+self.assertIsNot(${1:first}, ${2:second})
 endsnippet
 
 snippet ain "Assert in" b
-self.assertIn(${1:first},${2:second})
+self.assertIn(${1:first}, ${2:second})
 endsnippet
 
 snippet anin "Assert not in" b
-self.assertNotIn(${1:first},${2:second})
+self.assertNotIn(${1:first}, ${2:second})
 endsnippet
 
 snippet ainst "Assert is instance" b
-self.assertIsInstance(${1:object},${2:class})
+self.assertIsInstance(${1:object}, ${2:class})
 endsnippet
 
 snippet aninst "Assert not is instance" b
-self.assertNotIsInstance(${1:object},${2:class})
+self.assertNotIsInstance(${1:object}, ${2:class})
 endsnippet
 
 snippet aae "Assert almost equal" b
-self.assertAlmostEqual(${1:first},${2:second})
+self.assertAlmostEqual(${1:first}, ${2:second})
 endsnippet
 
 snippet ar "Assert raises" b
@@ -560,7 +560,7 @@ endsnippet
 
 snippet test "pyunit test" b
 def test_${1:name}(self):
-	$2{:pass}
+	${2:pass}
 endsnippet
 
 # vim:ft=snippets:
